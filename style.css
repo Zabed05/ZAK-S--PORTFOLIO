@@ -165,7 +165,6 @@ section {
 .home-img .img-box .img-item img{
     position: absolute;
     top: -4rem;
-    right: 2rem;
     display: block;
     width: 100%;
     object-fit: cover;
