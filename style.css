@@ -69,7 +69,7 @@ section {
 }
 .home-detail h1{
     font-size: clamp(3.5rem, 10vw, 5.5rem);
-    color: rgb(red, green, blue);
+    color: var(--white-color);
 }
 .home-detail h2{
     display: inline-block;
@@ -94,19 +94,17 @@ section {
     display: inline-block;
     padding: 1rem 3rem;
     background: var(--main-color);
-    border: .2rem solid var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
     font-weight: 500;
-    transition: .5s;
+    transition: all 0.3s ease;
 }
 .btn1:hover {
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  border: 1px solid white;
+    transform: scale(1.05);
+    background: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 .socials-container {
   display: flex;
@@ -217,7 +215,7 @@ section {
 
 .education-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(95rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 .education-container .container-box{

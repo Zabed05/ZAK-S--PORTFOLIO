@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zabed Khan Portfolio - Java Developer & Web Developer">
+    <meta name="keywords" content="Zabed Khan, Portfolio, Java Developer, Web Developer">
+    <meta name="author" content="Zabed Khan">
+
     <title>ZAK'S PORTFOLIO</title>
+    
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -30,13 +35,14 @@
                 <h2>I'm a 
                     <span id="element"></span>
                 </h2>
-                <p>Aspiring Software Engineer with a passion for modern web devolopement <br>and a strong foundation in Computer Science.</p>
+                <p>Aspiring Software Engineer with a passion for modern web developement <br>and a strong foundation in Computer Science.</p>
                 <div class="btn-container">
-                     <a href="files/Zabed_Khan_Resume.pdf" class="btn1">Download CV</a>
-                    <button class="btn1" onclick="location.href='./#contact'">Contact Info</button>
+                    <a href="files/Zabed_Khan_Resume.pdf" target="_blank" class="btn1">View Resume</a>
+                    <a href="#contact" class="btn1">Contact Me</a>
+
                  </div>
                <div class="socials-container">
-                    <img src="assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/zabed-khan-792017326'">
+                    <img src="assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/zabed-khan'">
                     <img src="assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/Zabed05'">
                  </div>
             </div>
@@ -278,17 +284,19 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 Zabed. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Zabed. All rights reserved.</p>
   </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-     <script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
     var typed = new Typed('#element', {
-      strings: ['Web Devoloper'],
+      strings: ['Java Developer', 'DSA Learner'],
+      loop: true,
       typeSpeed: 50,
-    });
-  </script>
+      backSpeed: 40,
+});
+</script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -126,3 +126,6 @@ navLinks.forEach(link => {
 window.addEventListener("load", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+//Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
